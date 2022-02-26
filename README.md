@@ -113,3 +113,69 @@ Implement KNN algorithm yourself in python for Iris Dataset without using built-
 * Split dataset into test and train sets 
 * Perform KNN algorithm to make predictions for k=5 
 * Compute accuracy and confusion matrix
+## Lab 10
+Naïve Bayes Classification Model
+### Task 1 
+Develop a python program to implement Bayesian classification model for the following dataset and classify the given test vector:
+| Age | Loan   | Class (Defaulter) |
+|-----|--------|-------------------|
+| 25  | 40000  | 0                 |
+| 35  | 60000  | 0                 |
+| 45  | 80000  | 0                 |
+| 20  | 20000  | 0                 |
+| 35  | 120000 | 0                 |
+| 52  | 18000  | 0                 |
+| 23  | 95000  | 1                 |
+| 40  | 62000  | 1                 |
+| 60  | 100000 | 1                 |
+| 48  | 220000 | 1                 |
+| 33  | 150000 | 1                 |
+| 48  | 142000 | ?                 |
+### Task 2
+Use the given cancer dataset and classify it using Bayesian classification model: 
+* First create a python script and load ‘breast_cancer’ file. 
+* Identify features and classes from the loaded dataset.
+* Perform 2-fold cross validation on the dataset by splitting it into testing and training parts.
+* Implement a Bayesian classifier using the above algorithm and use training dataset to classify each of the sample within testing dataset. 
+* Compute the accuracy from the predicted test samples.
+## Lab 11
+Implementation of Support Vector Machine Classification Model
+### Task 1
+* Import “breast cancer”data, split the data into a test and train dataset, train a SVM, and predict with the SVM using 10-fold cross validation. 
+* Implement for linear svm.
+* Compute accuracy and confusion matrix.
+### Task 2
+Perform SVM for blobs dataset by taking 400 samples and 2 features. 
+* Compute accuracy
+* Plot the decision boundary
+## Lab 12
+K-means Clustering
+### Task 1
+Implement k-means algorithm on iris dataset. 
+* Take 70% training data and 30% testing data using train-test split. 
+* Compute Accuracy and time taken by algorithm. 
+### Task 2
+Take blobs dataset and cluster it using K-means 
+* Take 400 samples and 4 features. 
+* Plot result for K=3,4,5 
+## Lab 13
+Implementation of Agglomerative Clustering
+### Task
+Implement Single Linkage and Complete Linkage agglomerative clustering for blobs dataset with 500 samples and 5 features. Plot results for N = 5,6,7. Compute the time taken by both algorithms and also compare the results.
+## Lab 14
+Single Layered Feed Forward Neural Network (Perceptron)
+### Task 1
+Develop a python application to implement perceptron for the following dataset. Use learning rate of 0.1 with zero biasing factor and initialize all the weights with 0:
+| x0 | x1 | x2 | class |
+|----|----|----|-------|
+| 1  | 0  | 0  | 1     |
+| 1  | 0  | 1  | 1     |
+| 1  | 1  | 0  | 1     |
+| 1  | 1  | 1  | 0     |
+### Task 2
+Use the given cancer dataset and classify it using perceptron:
+* First create a python script and load ‘cancer’ file.
+* Identify features and classes from the loaded dataset.
+* Perform 2-fold cross validation on the dataset by splitting it into testing and training parts.
+* Implement the perceptron using the above algorithm and use training dataset to classify each of the sample within testing dataset. Use learning rate of 0.1 and 0 biasing factor with 0 initial weights.
+* Repeat the above process until the accuracy of 80% or above is not achieved.
